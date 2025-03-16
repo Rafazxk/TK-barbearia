@@ -21,10 +21,11 @@ body {
    width: 100%;
    display: flex;
    align-items: center;
-   height: 20vh;
+   height: 200px;
    background: black;
    transition: transform 0.3s;
    z-index: 1000;
+   border-bottom: 3px solid gold;
 }
 .hero nav{
     margin: 0 auto;
@@ -35,17 +36,18 @@ body {
     text-decoration: none;
     margin: 70px;
     transition: 0.5s;
-    font-size: 18px;
+    font-size: 20px;
 }
 .hero #btn_home:hover, #btn_sobre:hover, #btn_servicos:hover{
     color:gold;
     border-bottom: 2px solid gold;
   
 }
-.hero img{
-    width: 200px;
-    height: 200px;
-}
+h1{
+ font-size: 50px;
+ margin-left: 60px;
+ color: gold;
+ }
 
 #btn_agendamento{
     padding: 20px;
@@ -59,7 +61,7 @@ body {
 }
 #btn_agendamento:hover{
    background: rgb(248, 155, 33);
-  
+  color: white;
 }
 
 .logo {
@@ -97,7 +99,6 @@ body {
     bottom: 20px;
     left: 20px;
     display: flex;
-    flex-direction: column;
     gap: 15px;
 }
 
@@ -113,50 +114,71 @@ body {
 
 
 main{
-    background: url("https://thumbs.dreamstime.com/b/interior-do-vintage-da-barbearia-85564270.jpg");
+    background: white;
     height: 80vh;
-    margin-top: 130px;
-
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
 }
 
-
-
+#servicos h2{
+  font-size: 40px;
+  
+}
+#servicos{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+height: 100%;
+}
+.cards{
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.cards #card{
+    width: 200px;
+    height: 220px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+     transition: 0.5s;
+}
+#card:hover{
+  background: rgb(165, 164, 164);
+ 
+}
 /* Contato */
 #contato {
+    height: 50vh;
     background: black;
     color: white;
     padding: 50px 20px;
     text-align: center;
-}
-
-#contato form {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+.contato_dois p{
+    margin: 50px;
 }
 
-#contato input {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    width: 100%;
-}
 
-#contato button {
-    padding: 10px;
-    background: gold;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
 
-#contato button:hover {
-    background: orange;
-}
 
 /* Responsividade */
 @media (max-width: 768px) {
