@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TK Barbearia - Agendamento</title>
+    <link rel="stylesheet" href="styles/agendamento.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" alt="voltar"></a>
+        <h1>TK<span> Barbearia</span></h1>
+    </header>
+
+    <main>
+    <section class="barbeiro">
+       <h2>Barbeiro</h2>
+       <select id="escolha">
+        <option>Escolha um barbeiro</option>
+        <option>Tharsys</option>
+        <option>Kleiton</option>
+        <option>Gustavo</option>
+       </select>
+   </section>
+        <section class="agendamento">
+            <h2>Agendamento</h2>
+            <div class="dias">
+                <button class="dia" disabled>SEG <br> FECHADO</button>
+                <button class="dia">TER <br> 15 vagas</button>
+                <button class="dia">QUA <br> 15 vagas</button>
+                <button class="dia">QUI <br> 15 vagas</button>
+                <button class="dia">SEX <br> 15 vagas</button>
+                <button class="dia">SÁB <br> 10 vagas</button>
+            </div>
+
+            <select id="horarios">
+                <option>Escolha um horário</option>
+                <option>09:00</option>
+                <option>10:00</option>
+                <option>11:00</option>
+            </select>
+        </section>
+
+        <section class="servicos">
+            <h2>Escolha um serviço</h2>
+           
+    <div class="estilo-corte">Corte Simples (R$ 15,00)</div>
+    <div class="estilo-corte">Corte Militar (R$ 20,00)</div>
+    <div class="estilo-corte">Corte Degradê (R$ 25,00)</div>
+     <div class="estilo-corte">Máquina e Tesoura (R$ 25,00)</div>
+     <div class="estilo-corte">Barba (R$ 20,00)</div>
+     <div class="estilo-corte">Limpeza de Pele (R$ 25,00)</div>
+            
+        </section>
+
+        <button id="confirmar">Confirmar Agendamento</button>
+    </main>
+
+   <div id="popup" class="popup">
+  
+        <h2>agendamento</h2>
+        
+        <button onclick="sumir()">Fechar</button>
+    </div>
+       
+
+    <script>
+     let popup = document.getElementById('popup');
+  
+      document.getElementById("confirmar").addEventListener("click", () => {
+    let horario = document.getElementById("horarios").value;
+    if (horario === "Escolha um horário") {
+        alert("Por favor, selecione um horário.");
+    } else {
+        informacoes();
+    }
+});
+function informacoes(){
+  aparece();
+}
+
+//Agendamento concluido
+
+  function aparece() {
+            document.getElementById("popup").classList.add("mostrar");
+        }
+
+        function sumir() {
+            document.getElementById("popup").classList.remove("mostrar");
+        }
+        
+  // agendamento concluido --- conteudo
+    
+ 
+    </script>
+</body>
+</html>
