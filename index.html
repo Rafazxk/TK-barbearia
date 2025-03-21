@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles/index.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header class="hero">
@@ -15,77 +14,71 @@
         <nav>
             <a href="#" id="btn_home">Home</a>
             <a href="#servicos" id="btn_servicos">Serviços</a>
-            <a href="agendamento.html" id="btn_agendamento">Agendamento</a>
-            <a href="#contato" id="btn_contato">contato</a>
+            <a href="agendamento.php" id="btn_agendamento">Agendamento</a>
+            <a href="#contato" id="btn_contato">Contato</a>
         </nav>       
     </header>
 
-    <div class="comunicacao">
-        <a href="#"><img src="https://portais.univasf.edu.br/programadegestao/imagens/icon-whatsapp.png/@@images/5799978b-ce74-4807-9b1b-18871680e34b.png" alt="WhatsApp"></a>
-        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/640px-Instagram_icon.png" alt="Instagram"></a>
+    <section class="main_image">
+        <img src="./imagens/logo.png" id="logo_image">
+    <div class="text_second">
+       <p>Conheça nosso trabalho!</p>
     </div>
-  
+    </section>
+
     <main>
         <section id="servicos">
-           <h2>Serviços</h2>
-          <div class="cards">
-            <div class="card-container">
-                <div class="card">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2291/2291727.png" alt="barba">
+            <h2>Serviços</h2>
+            <div class="cards-container">
+                <div class="cards">
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2291/2291727.png" alt="barba">
+                        </div>
+                        <p class="card-name">Barba</p>
+                    </div>
+                    
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="https://cdn-icons-png.flaticon.com/512/30/30452.png" alt="cabelo">
+                        </div>
+                        <p class="card-name">Corte de Cabelo</p>
+                    </div>
+                    
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/022/924/749/small/black-eyebrow-drawing-png.png" alt="sobrancelha">
+                        </div>
+                        <p class="card-name">Sobrancelha</p>
+                    </div>
+                    
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="https://images.vexels.com/media/users/3/140752/isolated/preview/17e31e592ab23bb0e8b2c0e76c0a4361-avatar-de-perfil-masculino-5.png" alt="limpeza">
+                        </div>
+                        <p class="card-name">Limpeza Facial</p>
+                    </div>
                 </div>
-                <p class="card-name">Barba</p>
             </div>
-            
-            <div class="card-container">
-                <div class="card">
-                    <img src="https://cdn-icons-png.flaticon.com/512/30/30452.png" alt="cabelo">
-                </div>
-                <p class="card-name">Corte de Cabelo</p>
-            </div>
-            
-            <div class="card-container">
-                <div class="card">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/022/924/749/small/black-eyebrow-drawing-png.png" alt="sobrancelha">
-                </div>
-                <p class="card-name">Sobrancelha</p>
-            </div>
-            
-            <div class="card-container">
-                <div class="card">
-                    <img src="https://images.vexels.com/media/users/3/140752/isolated/preview/17e31e592ab23bb0e8b2c0e76c0a4361-avatar-de-perfil-masculino-5.png" alt="limpeza">
-                </div>
-                <p class="card-name">Limpeza Facial</p>
-            </div>
-            
-          </div>
-          <a href="agendamento.html" id="ver_mais">Ver mais</a>
+            <a href="agendamento.php" id="ver_mais">Ver mais</a>
         </section>
-    
-       <section class="local">
-            <h2>Nosso Local</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?..."
-                width="100%" height="300" style="border:0;" allowfullscreen>
-            </iframe>
-       </section>
     </main>
 
-    <footer id="contato">
+    <section id="contato">
         <div class="contato_um">
             <h2>Siga-nos</h2>
-            <p>Instagram: tk_barbearia2</p>
         </div>
 
         <div class="contato_dois">
             <h2>Contato</h2>
-            <p>Telefone: 81 92192-2121</p>
-            <p>Email: tkbarbearia@gmail.com</p>
         </div>
+    </section>
+
+    <footer>
+        <p>Copy: Create by rafazxk for TK Barbearia</p>
     </footer>
-    
+
     <script src="scripts/main.js"></script>
-    <script>
-        ScrollReveal().reveal('.card', { delay: 300, origin: 'bottom', distance: '50px', duration: 800 });
-    </script>
+
 </body>
 </html>
